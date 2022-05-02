@@ -1,0 +1,108 @@
+body {
+    font-family: 'Cairo', sans-serif;;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+    width: 750px;
+    }
+}
+  /* Medium */
+@media (min-width: 992px) {
+    .container {
+    width: 970px;
+    }
+}
+  /* Large */
+@media (min-width: 1200px) {
+    .container {
+    width: 1170px;
+    }
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav {
+    border-bottom: 1px solid #444;
+
+}
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(236, 235, 235);
+    margin-top: 0;
+    padding-top: 0;
+    border-radius: 6px;
+}
+nav .container div {
+    font-size: 40px;
+}
+nav .container div::first-letter{
+    text-transform: uppercase;
+}
+nav .container div:hover {
+    padding-left: 20px;
+    transition: 0.5s;
+}
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+ul li {
+    margin-right: 25px;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+
+}
+li::first-letter {
+    text-transform: uppercase;
+}
+.main .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main .container h2 {
+    background-color: #444;
+    padding: 25px;
+    color: white;
+    border-radius: 6px;
+}
+.main .container h2::first-letter {
+    text-transform: uppercase;
+}
+.main .container span {
+    display: block;
+    text-align: center;
+}
+.main .container button {
+    margin: 30px;
+    background-color: transparent;
+    padding: 25px;
+    border: none;
+    color: black;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 6px;
+    font-size: 19px;
+    cursor: pointer;
+}
+/*.main .container button:hover {
+    background-color: rgb(116, 114, 114);
+    color: white;
+    transition: 0.5s;
+}*/
